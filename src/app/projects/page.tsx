@@ -25,7 +25,7 @@ const PROJECTS = [
   },
   {
     id: 2,
-    name: "financeme",
+    name: "chipdfish",
     description: `This project demonstrates the deployment of a DevOps pipeline for a global banking and
             financial services provider, FinanceMe. The company transitioned from a monolithic 
             architecture to a microservice-based architecture to handle increased traffic and 
@@ -35,15 +35,6 @@ const PROJECTS = [
     link: "https://github.com/Abhiz2411/FinanceMe-Devops-Project-01",
     images: [
       "/assets/projects-screenshots/financeme/1.png",
-      "/assets/projects-screenshots/financeme/2.png",
-      "/assets/projects-screenshots/financeme/3.png",
-      "/assets/projects-screenshots/financeme/4.png",
-      "/assets/projects-screenshots/financeme/5.png",
-      "/assets/projects-screenshots/financeme/6.png",
-      "/assets/projects-screenshots/financeme/7.png",
-      "/assets/projects-screenshots/financeme/8.png",
-      "/assets/projects-screenshots/financeme/9.png",
-      "/assets/projects-screenshots/financeme/10.png"
     ],
   },
   {
@@ -53,10 +44,7 @@ const PROJECTS = [
             dopest way possible.`,
     link: "https://www.com/",
     images: [
-      "/assets/projects-screenshots/myportfolio/landing.png",
-      "/assets/projects-screenshots/myportfolio/navbar.png",
-      "/assets/projects-screenshots/myportfolio/projects.png",
-      "/assets/projects-screenshots/myportfolio/project.png",
+      "/assets/projects-screenshots/myportfolio/landing.png"
     ],
   },
   {

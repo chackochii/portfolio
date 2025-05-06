@@ -49,7 +49,7 @@ const CONTACT_LINKS = [
   },
   {
     name: "Phone",
-    content: "1234567890",
+    content: "",
     href: "123123",
     icon: <FaPhone height={"50px"} />,
   },
