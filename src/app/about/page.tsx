@@ -43,25 +43,25 @@ import { TbTerminal2 } from "react-icons/tb";
 const CONTACT_LINKS = [
   {
     name: "Email",
-    content: "abhijitzende75@gmail",
-    href: "mailto:abhijitzende75@gmail.com",
+    content: "edwinchacko200o@gmail.com",
+    href: "mailto:edwinchacko2000@gmail.com",
     icon: <FaEnvelope height={"50px"} />,
   },
   {
     name: "Phone",
     content: "1234567890",
-    href: "tel:8308509180",
+    href: "123123",
     icon: <FaPhone height={"50px"} />,
   },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/zende-abhijit/",
-    content: "/zende-abhijit",
+    href: "https://www.linkedin.com/in/edwinchacko1212/",
+    // content: "/zende-abhijit",
     icon: <FaLinkedin height={"50px"} />,
   },
   {
     name: "GitHub",
-    href: "https://github.com/Abhiz2411",
+    href: "https://github.com/chackochii",
     content: "/naresh-khatri",
     icon: <FaGithub height={"50px"} />,
   },

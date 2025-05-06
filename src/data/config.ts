@@ -1,16 +1,15 @@
 const config = {
-  title: "Abhijit Zende | DevOps Enthusiast",
+  title: "Edwin chacko | Full Stack Developer",
   description: {
     long: "Explore the portfolio of Abhijit, a Computer Science Engineer with 1.5 year experience in Devlopment, DevOps & Database management with hands-on experience in deploying & automating workflows, & collaborating with foreign clients. Strong analytical skills, effective communication, and a team-oriented approach to driving process improvements and delivering results.",
     short:
       "Discover the portfolio of Abhijit, a DevOps enthusiast solving real life problems in DevOps and Development.",
   },
   keywords: [
-    "Abhijit",
-    "Abhijit Zende",
-    "abhijitzende",
-    "abhijitzende.com",
-    "Abhijit Zende portfolio",
+    "Edwin chacko",
+    "Edwin chacko",
+    "Edwinchacko",
+    "Edwin chacko portfolio",
     "portfolio",
     "DevOps",
     "Devlopment",
@@ -21,8 +20,8 @@ const config = {
     "web development",
     "interactive websites",
     // "GSAP",
-    // "React",
-    // "Next.js",
+    "React",
+    "Next.js",
     // "Spline",
     // "Framer Motion",
     "AWS",
@@ -30,19 +29,16 @@ const config = {
     "AIOps",
     "Azure",
   ],
-  author: "Abhijit Zende",
-  email: "abhijitzende75@gmail.com",
+  author: "Edwin chacko",
+  email: "edwinchacko2000@gmail.com",
   site: "https://abhijitzende.com",
 
   get ogImg() {
     return this.site + "/assets/seo/og-image.png";
   },
   social: {
-    twitter: "https://x.com/_Abhi_Speaks/",
-    linkedin: "https://www.linkedin.com/in/zende-abhijit/",
-    instagram: "https://www.instagram.com/_.celestial_abhi._/",
-    facebook: "https://www.facebook.com/profile.php?id=100010029821759",
-    github: "https://github.com/Abhiz2411/",
+    linkedin: "https://www.linkedin.com/in/edwinchacko1212/",
+    github: "https://github.com/chackochii",
   },
 };
 export { config };
