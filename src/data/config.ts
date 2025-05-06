@@ -30,8 +30,8 @@ const config = {
     "Azure",
   ],
   author: "Edwin chacko",
-  email: "edwinchacko2000@gmail.com",
-  site: "https://abhijitzende.com",
+  email: "edwinchacko2001@gmail.com",
+  site: "https://.com",
 
   get ogImg() {
     return this.site + "/assets/seo/og-image.png";
