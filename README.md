@@ -36,7 +36,7 @@ The portfolio website is built using the following tools and technologies:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/Abhiz2411/3D-interactive-portfolio.git
+   git clone https://github.com/chackochii/portfolio.git
    ```
 
 2. Navigate to the project directory:
@@ -70,7 +70,7 @@ The portfolio website is built using the following tools and technologies:
 
 ## 🚀 Deployment
 
-This project is deployed using **Vercel** for its blazing-fast performance and ease of use. You can view the live site [here](https://www.abhijitzende.com/).
+This project is deployed using **Vercel** for its blazing-fast performance and ease of use. You can view the live site [here](https://www.edwinchacko.com/).
 
 ### Setting up Resend API on Vercel
 
@@ -86,14 +86,14 @@ Note: Make sure to keep your API key secret and never commit it to your reposito
 
 ## 💖 Acknowledgments
 
-A huge shoutout to [Naresh Khatri](https://github.com/Naresh-Khatri/Portfolio) for the inspiration and ideas that sparked this journey! 💡 If you're interested in creative web design, definitely check out his work.
+A huge shoutout to [zende-abhijit] for the inspiration and ideas that sparked this journey! 💡 If you're interested in creative web design, definitely check out his work.
 
 ## 📬 Contact
 
 Feel free to reach out to me for collaboration, feedback, or just to say hi! 😊
 
-- **Email:** abhijitzende75@gmail.com
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/zende-abhijit/)
+- **Email:** edwinchacko2000@gmail.com
+- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in//)
 
 ---
 
