@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /private/
+
+# Host
+Host: https://edwin-chacko-portfolio.vercel.app.com
+
+# Sitemaps
+Sitemap: https://edwin-chacko-portfolio.vercel.app.com/sitemap.xml
