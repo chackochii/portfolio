@@ -34,6 +34,7 @@ import {
   SiApachemaven,
   SiCplusplus,
   SiArduino,
+  SiAmazonec2,
 } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import css from "styled-jsx/css";
@@ -292,6 +293,12 @@ const PROJECT_SKILLS = {
     fg: "white",
     icon: <SiArduino/>,
   },
+  EC2:{
+    title:"EC2",
+    bg:"black",
+    fg:"white",
+    icon:<SiAmazonec2/>
+  }
 };
 
 export type Project = {
@@ -309,39 +316,85 @@ const projects: Project[] = [
   // {
   //   
   // +
-  // { // 01. AI Docker file optimizer project
-  //   id: "aidockerfileoptimizer",
-  //   category: "AI and DevOps",
-  //   title: "AI Dockerfile Optimizer",
-  //   src: "/assets/projects-screenshots/aidockerfileoptimizer/2.png",
-  //   screenshots: ["1.png", "2.png", "3.png"],
-  //   live: "https://ai-docker-file-optimizer.netlify.app/",
-  //   github:"https://github.com/Abhiz2411/AI-Docker-file-optimizer",
-  //   skills: {
-  //     frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.vite],
-  //     backend: [PROJECT_SKILLS.openai,PROJECT_SKILLS.netlify],
-  //   },
-  //   get content() {
-  //     return (
-  //       <div>
-  //         <TypographyP className="font-mono ">
-  //           AI-Docker-file-optimizer helps optimize Dockerfiles for smaller, more efficient images. 
-  //           Simply paste your Dockerfile, and the app analyzes it for best practices and size 
-  //           optimization tips. It then provides a refactored, optimized version of the Dockerfile. 
-  //           Deployed on Vercel, it ensures fast and easy access to Dockerfile optimization.
-  //         </TypographyP>
-  //         <ProjectsLinks live={this.live} repo={this.github} />
-  //         <SlideShow
-  //           images={[
-  //             `${BASE_PATH}/aidockerfileoptimizer/1.png`,
-  //             `${BASE_PATH}/aidockerfileoptimizer/2.png`,
-  //             `${BASE_PATH}/aidockerfileoptimizer/3.png`,
-  //           ]}
-  //         />
-  //       </div>
-  //     );
-  //   },
-  // },
+  {
+    id: "kds",
+    category: "development",
+    title: "KDS - Kitchen Display System",
+    src: "/assets/projects-screenshots/kds/2.png",
+    screenshots: ["1.png", "2.png", "3.png"],
+    live: "https://kds-display-system.netlify.app/",
+    github: "https://github.com/Abhiz2411/Kitchen-Display-System",
+    skills: {
+      frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.react, PROJECT_SKILLS.tailwind],
+      backend: [PROJECT_SKILLS.node, PROJECT_SKILLS.express],
+    },
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            The Kitchen Display System (KDS) streamlines restaurant kitchen workflows by replacing 
+            traditional ticket systems with a digital interface. Orders are received in real-time 
+            through a responsive dashboard powered by WebSockets, ensuring efficient communication 
+            between front-of-house and kitchen staff. Built with React, Node.js, and Tailwind CSS, 
+            the system enhances operational speed and reduces errors.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+          <SlideShow
+            images={[
+              `${BASE_PATH}/kds/1.png`,
+              `${BASE_PATH}/kds/2.png`,
+              `${BASE_PATH}/kds/3.png`,
+            ]}
+          />
+        </div>
+      );
+    },
+  },
+  {
+    id: "dispatch",
+    category: "development",
+    title: "Dispatch 3.0 - Delivery Management System",
+    src: "/assets/projects-screenshots/dispatch/2.png",
+    screenshots: ["1.png", "2.png", "3.png"],
+    live: "https://dispatch-delivery-app.netlify.app/",
+    github: "https://github.com/Abhiz2411/Dispatch-3.0",
+    skills: {
+      frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.react, PROJECT_SKILLS.tailwind],
+      backend: [
+        PROJECT_SKILLS.node,
+        PROJECT_SKILLS.express,
+        PROJECT_SKILLS.postgres,
+        PROJECT_SKILLS.EC2,
+
+      ],
+    },
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            Dispatch 3.0 is a comprehensive delivery management application designed to streamline 
+            both order fulfillment and internal transfers. The frontend is developed using React, 
+            Tailwind CSS, and TypeScript, providing a responsive and type-safe user interface. 
+            The backend leverages Node.js, Express, and TypeORM with PostgreSQL for robust data 
+            management. JWT is utilized for secure authentication and authorization, while AWS 
+            services ensure scalability and reliability. This system enables efficient assignment, 
+            tracking, and management of deliveries and transfers, enhancing operational productivity.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+          <SlideShow
+            images={[
+              `${BASE_PATH}/dispatch/1.png`,
+              `${BASE_PATH}/dispatch/2.png`,
+              `${BASE_PATH}/dispatch/3.png`,
+            ]}
+          />
+        </div>
+      );
+    },
+  }
+  
+  
+ 
   // { // 02. FinanceMe project
   //   id: "financeme",
   //   category: "DevOps in Banking and Finance",
