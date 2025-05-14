@@ -180,9 +180,6 @@ export type Project = {
   live: string;
 };
 const projects: Project[] = [
-  // {
-  //   
-  // +
   {
     id: "kds",
     category: "development",
@@ -205,7 +202,6 @@ const projects: Project[] = [
             between front-of-house and kitchen staff. Built with React, Node.js, and Tailwind CSS, 
             the system enhances operational speed and reduces errors.
           </TypographyP>
-          {/* <ProjectsLinks live={this.live} repo={this.github} /> */}
           <SlideShow
             images={[
               `${BASE_PATH}/kds/1.png`,
@@ -232,7 +228,6 @@ const projects: Project[] = [
         PROJECT_SKILLS.express,
         PROJECT_SKILLS.postgres,
         PROJECT_SKILLS.EC2,
-
       ],
     },
     get content() {
@@ -247,7 +242,6 @@ const projects: Project[] = [
             services ensure scalability and reliability. This system enables efficient assignment, 
             tracking, and management of deliveries and transfers, enhancing operational productivity.
           </TypographyP>
-          {/* <ProjectsLinks live={this.live} repo={this.github} /> */}
           <SlideShow
             images={[
               `${BASE_PATH}/dispatch/1.png`,
@@ -275,7 +269,11 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono">
-            Heribe is a modern, responsive company website built using React and Tailwind CSS. It showcases the company's services, portfolio, and contact information with a clean and intuitive design. The project emphasizes responsive layouts and interactive UI components to provide an engaging user experience.
+            Heribe is a modern, responsive company website built using React and Tailwind CSS. It showcases the 
+            company&apos;s services, product offerings, and contact information. Each product listing includes a 
+            description of its purpose, how it helps customers, and feedback received from users. Designed for 
+            scalability and clarity, the site emphasizes a clean layout and interactive features that make it easy 
+            for visitors to explore offerings and get in touch.
           </TypographyP>
           <SlideShow
             images={[
@@ -288,9 +286,6 @@ const projects: Project[] = [
       );
     },
   },
-
-
-
   {
     id: "chipdfish",
     category: "development",
@@ -306,16 +301,23 @@ const projects: Project[] = [
         PROJECT_SKILLS.express,
         PROJECT_SKILLS.sequelize,
         PROJECT_SKILLS.postgres,
-
       ],
     },
     get content() {
       return (
         <div>
           <TypographyP className="font-mono">
-            Chipdfish is a cross-platform mobile application designed for fishing sport enthusiasts. Built with React Native for the frontend and Node.js, Express, and Sequelize for the backend, the app enables users to log fishing trips, track locations, and share catches with the community. The UI is intuitive and responsive, offering a native experience on both iOS and Android devices.
+            Chipdfish is a cross-platform mobile application designed for fishing sport enthusiasts. Built with React 
+            Native for the frontend and Node.js, Express, and Sequelize for the backend, the app enables users to log 
+            fishing trips, track locations, and share catches with the community.
             <br /><br />
-            The backend API is powered by Express and uses Sequelize ORM to interact with a structured database, supporting features like user profiles, catch history, and geolocation tagging. The application underwent real-world testing using TestFlight (iOS) and Android builds to ensure smooth performance and a seamless user experience. Chipdfish promotes a social, engaging, and organized approach to sport fishing through technology.
+            The UI is intuitive and responsive, offering a native experience on both iOS and Android devices. The backend 
+            API is powered by Express and uses Sequelize ORM to interact with a structured database, supporting features 
+            like user profiles, catch history, and geolocation tagging.
+            <br /><br />
+            The application underwent real-world testing using TestFlight (iOS) and Android builds to ensure smooth performance 
+            and a seamless user experience. Chipdfish promotes a social, engaging, and organized approach to sport fishing 
+            through technology.
           </TypographyP>
           <SlideShow
             images={[
@@ -326,10 +328,6 @@ const projects: Project[] = [
       );
     },
   }
-  
-  
-  
-  
-  
 ];
+
 export default projects;
