@@ -184,7 +184,7 @@ const projects: Project[] = [
     id: "kds",
     category: "development",
     title: "KDS - Kitchen Display System",
-    src: "/assets/projects-screenshots/kds/2.png",
+    src: "/assets/projects-screenshots/kds/kds.png",
     screenshots: ["1.png", "2.png", "3.png"],
     live: "https://kds-display-system.netlify.app/",
     github: "https://github.com/Abhiz2411/Kitchen-Display-System",
@@ -204,9 +204,8 @@ const projects: Project[] = [
           </TypographyP>
           <SlideShow
             images={[
-              `${BASE_PATH}/kds/1.png`,
-              `${BASE_PATH}/kds/2.png`,
-              `${BASE_PATH}/kds/3.png`,
+              `${BASE_PATH}/kds/kds.png`,
+              `${BASE_PATH}/kds/kds1.png`,
             ]}
           />
         </div>
@@ -217,7 +216,7 @@ const projects: Project[] = [
     id: "dispatch",
     category: "development",
     title: "Dispatch 3.0 - Delivery Management System",
-    src: "/assets/projects-screenshots/dispatch/2.png",
+    src: "/assets/projects-screenshots/dispatch/DispatchLogin.png",
     screenshots: ["1.png", "2.png", "3.png"],
     live: "https://dispatch-delivery-app.netlify.app/",
     github: "https://github.com/Abhiz2411/Dispatch-3.0",
@@ -244,9 +243,9 @@ const projects: Project[] = [
           </TypographyP>
           <SlideShow
             images={[
-              `${BASE_PATH}/dispatch/1.png`,
-              `${BASE_PATH}/dispatch/2.png`,
-              `${BASE_PATH}/dispatch/3.png`,
+              `${BASE_PATH}/dispatch/DispatchLogin.png`,
+              `${BASE_PATH}/dispatch/DispatchOrder.png`,
+              `${BASE_PATH}/dispatch/Dispatchpage.png`,
             ]}
           />
         </div>
@@ -257,7 +256,7 @@ const projects: Project[] = [
     id: "heribe",
     category: "development",
     title: "Heribe - Company Website",
-    src: "/assets/projects-screenshots/heribe/1.png",
+    src: "/assets/projects-screenshots/herbie/herbie.png",
     screenshots: ["1.png", "2.png", "3.png"],
     live: "https://heribe-company-website.netlify.app/",
     github: "https://github.com/YourUsername/heribe-company-website",
@@ -277,9 +276,7 @@ const projects: Project[] = [
           </TypographyP>
           <SlideShow
             images={[
-              `${BASE_PATH}/heribe/1.png`,
-              `${BASE_PATH}/heribe/2.png`,
-              `${BASE_PATH}/heribe/3.png`,
+              `${BASE_PATH}/herbie/herbie.png`,
             ]}
           />
         </div>
@@ -290,10 +287,10 @@ const projects: Project[] = [
     id: "chipdfish",
     category: "development",
     title: "Chipdfish - Fishing Sport Mobile App",
-    src: "/assets/projects-screenshots/financeme/1.png",
+    src: "/assets/projects-screenshots/chipdfish/login.png",
     screenshots: ["1.png"],
     live: "",
-    github: "https://github.com/Abhiz2411/FinanceMe-Devops-Project-01",
+    github: "https://github.com/FinanceMe-Devops-Project-01",
     skills: {
       frontend: [PROJECT_SKILLS.react_native],
       backend: [
@@ -321,7 +318,9 @@ const projects: Project[] = [
           </TypographyP>
           <SlideShow
             images={[
-              `${BASE_PATH}/financeme/1.png`,
+              `${BASE_PATH}/chipdfish/login.png`,
+              `${BASE_PATH}/chipdfish/landingPage.png`,
+              `${BASE_PATH}/chipdfish/payment.png`,
             ]}
           />
         </div>
