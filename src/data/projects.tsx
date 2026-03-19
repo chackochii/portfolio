@@ -280,9 +280,9 @@ const projects: Project[] = [
           </TypographyP>
           <SlideShow
             images={[
-              `${BASE_PATH}/happi/45.png`,
-              `${BASE_PATH}/happi/46.png`,
-              `${BASE_PATH}/happi/44.png`,
+              `${BASE_PATH}/happi/45.jpg`,
+              `${BASE_PATH}/happi/46.jpg`,
+              `${BASE_PATH}/happi/44.jpg`,
             ]}
           />
         </div>
