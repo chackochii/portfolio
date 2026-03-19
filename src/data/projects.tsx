@@ -256,7 +256,7 @@ const projects: Project[] = [
     id: "Happi",
     category: "development",
     title: "Happi - HR Management System",
-    src: "/assets/projects-screenshots/happi/45.png",
+    src: "/assets/projects-screenshots/happi/45.jpg",
     screenshots: ["1.png", "2.png", "3.png"],
     live: "https://kds-display-system.netlify.app/",
     github: "https://github.com/Abhiz2411/Kitchen-Display-System",
