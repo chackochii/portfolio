@@ -252,6 +252,42 @@ const projects: Project[] = [
       );
     },
   },
+   {
+    id: "Happi",
+    category: "development",
+    title: "Happi - HR Management System",
+    src: "/assets/projects-screenshots/kds/kds.png",
+    screenshots: ["1.png", "2.png", "3.png"],
+    live: "https://kds-display-system.netlify.app/",
+    github: "https://github.com/Abhiz2411/Kitchen-Display-System",
+    skills: {
+      frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.react, PROJECT_SKILLS.tailwind],
+      backend: [PROJECT_SKILLS.node, PROJECT_SKILLS.express],
+    },
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            Happi is a comprehensive HR Management System designed to streamline 
+          organizational workflows and employee operations. The platform enables 
+          efficient task management, timesheet tracking, and leave management, 
+          helping teams stay organized and productive. 
+
+          It also features real-time notifications and an in-app chat system to 
+          enhance communication and collaboration across teams. Built with React, 
+          Node.js, and Tailwind CSS, Happi provides a responsive and user-friendly 
+          interface for modern workforce management.
+          </TypographyP>
+          <SlideShow
+            images={[
+              `${BASE_PATH}/kds/kds.png`,
+              `${BASE_PATH}/kds/kds1.png`,
+            ]}
+          />
+        </div>
+      );
+    },
+  },
   {
     id: "heribe",
     category: "development",
