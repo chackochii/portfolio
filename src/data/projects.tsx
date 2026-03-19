@@ -256,7 +256,7 @@ const projects: Project[] = [
     id: "Happi",
     category: "development",
     title: "Happi - HR Management System",
-    src: "/assets/projects-screenshots/kds/kds.png",
+    src: "/assets/projects-screenshots/happi/45.png",
     screenshots: ["1.png", "2.png", "3.png"],
     live: "https://kds-display-system.netlify.app/",
     github: "https://github.com/Abhiz2411/Kitchen-Display-System",
@@ -280,8 +280,9 @@ const projects: Project[] = [
           </TypographyP>
           <SlideShow
             images={[
-              `${BASE_PATH}/kds/kds.png`,
-              `${BASE_PATH}/kds/kds1.png`,
+              `${BASE_PATH}/happi/45.png`,
+              `${BASE_PATH}/happi/46.png`,
+              `${BASE_PATH}/happi/44.png`,
             ]}
           />
         </div>
