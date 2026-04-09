@@ -16,7 +16,7 @@ import SocketContextProvider from "@/contexts/socketio";
 import RemoteCursors from "@/components/realtime/remote-cursors";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://edwin-chacko-portfolio.vercel.app"),
+  metadataBase: new URL("https://edwinchacko.online"),
   title: config.title,
   description: config.description.long,
   keywords: config.keywords,
@@ -60,12 +60,25 @@ export default function RootLayout({
   return (
     <html lang="en" className={[archivoBlack.className].join(" ")}>
       <head>
-        <Script
-          defer
-          src={process.env.UMAMI_DOMAIN}
-          data-website-id={process.env.UMAMI_SITE_ID}
-        ></Script>
-        {/* <Analytics /> */}
+     <Script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      name: "Edwin Chacko",
+      url: "https://edwinchacko.online",
+      sameAs: [
+        "https://github.com/chackochii",
+        "https://www.linkedin.com/in/edwinchacko/",
+      ],
+      jobTitle: "MERN Stack Developer",
+      worksFor: {
+        "@type": "Organization",
+        name: "Torcue",
+      },
+    }),
+  }}
       </head>
       <body>
         <ThemeProvider
