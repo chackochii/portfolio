@@ -1,13 +1,20 @@
 const config = {
-    siteUrl: 'https://edwin-chacko-portfolio.vercel.app.com',
-    generateRobotsTxt: true,
-    robotsTxtOptions: {
-      policies: [
-        { userAgent: '*', allow: '/' },
-        { userAgent: '*', disallow: '/private/' },
-      ],
-    },
-  };
-  
-  module.exports = config;
-  
+  siteUrl: 'https://edwinchacko.online',
+
+  generateRobotsTxt: true,
+
+  robotsTxtOptions: {
+    policies: [
+      {
+        userAgent: '*',
+        allow: '/',
+      },
+    ],
+
+    additionalSitemaps: [
+      'https://edwinchacko.online/sitemap.xml',
+    ],
+  },
+};
+
+module.exports = config;
