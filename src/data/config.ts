@@ -1,5 +1,6 @@
 const config = {
-   title: "Edwin Chacko | MERN Stack Developer | AWS | Torcue",
+  site: "https://edwinchacko.online",
+  title: "Edwin Chacko | MERN Stack Developer",
   description: {
     long: "Edwin Chacko is a MERN Stack Developer with experience in React, Node.js, Express, PostgreSQL, and AWS. Skilled in building scalable web applications, deploying cloud infrastructure, and collaborating with global clients.",
     short:
@@ -22,13 +23,12 @@ const config = {
     "PostgreSQL",
     "Express.js",
     "EC2",
-    "edwin chacko",
-    "edwin",
-    "Edwin",
+    "Hire MERN developer",
+    "Full Stack Developer India",
   ],
   author: "Edwin chacko",
   email: "edwinchacko2001@gmail.com",
-  site: "https://edwinchacko.online",
+
 
   get ogImg() {
     return this.site + "/assets/seo/og-image.png";

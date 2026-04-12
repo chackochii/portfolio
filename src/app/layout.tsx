@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Archivo_Black } from "next/font/google";
+import { Archivo_Black } from "next/font/google";
 import "./globals.css";
 import ElasticCursor from "@/components/ui/ElasticCursor";
 import Particles from "@/components/Particles";
@@ -21,19 +21,26 @@ export const metadata: Metadata = {
   description: config.description.long,
   keywords: config.keywords,
   authors: [{ name: config.author }],
+
+  alternates: {
+    canonical: "https://edwinchacko.online",
+  },
+
   openGraph: {
     title: config.title,
     description: config.description.short,
     url: config.site,
+    siteName: "Edwin Chacko Portfolio",
+    locale: "en_IN",
+    type: "website",
     images: [
       {
         url: config.ogImg,
-        width: 800,
-        height: 600,
-        alt: "Portfolio preview",
+        width: 1200,
+        height: 630,
+        alt: "Edwin Chacko Portfolio",
       },
     ],
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
@@ -44,7 +51,16 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
+
+  viewport: "width=device-width, initial-scale=1",
+  themeColor: "#000000",
 };
 
 const archivoBlack = Archivo_Black({
@@ -58,27 +74,43 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={[archivoBlack.className].join(" ")}>
+    <html lang="en" className={archivoBlack.className}>
       <head>
-     <Script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Person",
-      name: "Edwin Chacko",
-      url: "https://edwinchacko.online",
-      sameAs: [
-        "https://github.com/chackochii",
-        "https://www.linkedin.com/in/edwinchacko/",
-      ],
-      jobTitle: "MERN Stack Developer",
-      worksFor: {
-        "@type": "Organization",
-        name: "Torcue",
-      },
-    }),
-  }}
+        <Script
+          id="structured-data" // ✅ REQUIRED FIX
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Edwin Chacko",
+              url: "https://edwinchacko.online",
+              image: "https://edwinchacko.online/assets/seo/og-image.png",
+              sameAs: [
+                "https://github.com/chackochii",
+                "https://www.linkedin.com/in/edwinchacko/",
+              ],
+              jobTitle: "MERN Stack Developer",
+              description:
+                "MERN Stack Developer specializing in React, Node.js, and AWS.",
+              knowsAbout: [
+                "React",
+                "Next.js",
+                "Node.js",
+                "Express.js",
+                "PostgreSQL",
+                "AWS",
+                "Nginx",
+                "MERN Stack",
+              ],
+              worksFor: {
+                "@type": "Organization",
+                name: "Torcue",
+              },
+            }),
+          }}
+        />
       </head>
       <body>
         <ThemeProvider
@@ -93,6 +125,7 @@ export default function RootLayout({
           <Preloader>
             <SocketContextProvider>
               <RemoteCursors />
+
               <TooltipProvider>
                 <Header />
                 {children}
